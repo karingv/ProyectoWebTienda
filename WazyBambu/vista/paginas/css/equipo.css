@@ -1,0 +1,342 @@
+:root{
+    --green: rgb(218, 234, 188);
+    --black:#252a34;
+    --brown:rgb(221, 179, 155);
+    --white:#eaeaea;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:#fff;
+    overflow-x:hidden;
+    font-family: 'Raleway', sans-serif;
+}
+/*Skew*/
+.skew-abajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.skew-arriba{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 10vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    z-index: 10;
+}
+/*Menu de Navegacion*/
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.menu .logo-box{
+    margin-left: 20px;
+}
+
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container .lists{
+    display: flex;
+    margin-top: 20px;
+}
+.menu .list-container .lists li{
+    list-style: none;
+}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
+    color: var(--black);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.menu .list-container .lists li a.activo{
+    background: var(--green);
+    color: #fff;
+}
+.menu .list-container .lists li a:hover{
+    background: var(--green);
+    color: #fff;
+}
+.btn-menu > .fa-bars{
+    display: none;
+}
+/*Integrantes*/
+.container3{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/image2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 100px;
+}
+.container3 .deg-background{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.container3 .ejeZproject{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.container3 .container-project{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+.container3 .container-project .project-tittle{
+    border: 2px solid #fff;
+    padding: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.container3 .container-project .project-tittle h2{
+    font-size: 40px;
+    color: #fff;
+    font-weight: normal;
+}
+.container3 .container-project .project-tittle p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+}
+.container3 .container-project .project-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px;
+    align-items: center;
+    text-align: center;
+}
+.container-project .project-img .bam{
+    width: calc(40% - 10px);
+    background: #fff;
+    margin-bottom:50px;
+    border-radius: 10px;
+    padding: 10px 40px 30px 30px;
+    transition:0.5s;
+    align-items: center;
+}
+.container-project .project-img .bam>img{
+    color: #fff;
+    display:inline-block;
+    width: 170px;
+    height: 170px;
+    margin: 20px 60px;
+    align-items: center;
+    border-radius: 50%;
+
+}
+.container-project .project-img .bam>h6{
+    font-size: 20px;
+    color: var(--black);
+    font-weight: normal;
+    text-align: center;
+}
+/*Footer*/
+footer{
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 12%, rgba(255, 255, 255, 1) 37%, #b7d67a98 100%);
+    padding: 30px 0px;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.social-media i{
+    font-size: 25px;
+    display: inline-block;
+    color: #adb6c7;
+    border: 1px solid#adb6c7;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 42px;
+    cursor: pointer;
+    margin-top: 2px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 15px;
+}
+
+.social-media i:hover{
+    color: #fff;
+    background-color: rgb(222, 236, 195);
+    border-color: rgb(222, 236, 1958);
+}
+.social-media h5{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+/*Media Query*/
+@media only screen and (max-width: 900px) {
+    .btn-menu > .fa-bars{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .btn-menu > .fa-bars:hover{
+        color: var(--green);
+    }
+    .btn-menu > .fa-times{
+        color: var(--green);
+    }
+    .menu .list-container{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 0px);
+        background: #fff;
+    }
+    .menu .list-container .lists{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .menu .list-container .lists li{
+        width: 90%;
+        margin: 10px 0px;
+        border-bottom: 1px solid var(--green);
+        text-align: center;
+    }
+    .menu .list-container .lists li a{
+        font-size: 20px;
+    }
+    .menu .list-container .lists li a.activo{
+        background: none;
+        color: var(--green);
+    }
+    .menu .list-container .lists li a:hover{
+        background: none;
+        color: #fff;
+    }
+    .container3 .container-project .project-img{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 773px){
+    /*img header*/
+    .img-header .welcome h1{
+        font-size: 40px;
+    }
+    .img-header .welcome > button{
+        width: 130px;
+        font-size: 20px;
+    }
+    /*Acerca de nosotros*/
+    .container1{
+        flex-direction: column;
+    }
+    /*Definicion bambu*/
+    .container2{
+        width: 100%;
+    }
+    .container2 .info-container{
+        flex-direction: column;
+    }
+
+    /*¿Por que comprar articulos bambu?*/
+    .container3{
+        width: 100%;
+        flex-direction: column;
+    }
+    .container3 .container-project .project-img{
+        width: 100%;
+    }
+    .container-project .project-img .bam{
+        width: 100%;
+    }
+    .container-project .project-img .bam>img{
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 590px){
+     /*img header*/
+     .img-header .welcome h1{
+        font-size: 30px;
+    }
+    .img-header .welcome hr{
+        width: 100%;
+    }
+    .img-header .welcome p{
+        font-size: 17px;
+    }
+    .img-header .welcome > button{
+        width: 100px;
+        font-size: 17px;
+    }
+    /*Acerca de nosotros*/
+    .container1{
+        flex-direction: column;
+    }
+    /*Definicion bambu*/
+    .container2{
+        width: 100%;
+    }
+    .container2 .info-container{
+        flex-direction: column;
+    }
+
+    /*¿Por que comprar articulos bambu?*/
+    .container3{
+        width: 100%;
+        flex-direction: column;
+    }
+    .container3 .container-project .project-img{
+        width: 100%;
+    }
+    .container-project .project-img .bam>img{
+        margin: auto;
+    }
+    /*Despertamos conciencia*/
+    .container4{
+        width: 100%;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WazyBambu | Inicio de sesión</title>
+        <!--Estilos-->
+        <link rel="stylesheet" href="css\login.css">
+        <link href="https: //fonts.googleapis.com/css2? family = Raleway: wght @ 200 & display = swap " rel=" stylesheet ">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <!--Formulario Login-->
+        <section class="container2">
+            <div class="deg-container">
+                <div class="ejeZcontainer">
+                    <div class="container-content">
+                        <div class="container-tittle">
+                            <h2>Inicio de sesión | WazyBambu</h2>
+                        </div>
+
+                        <div class="formulario-content">
+                            <form id="formulario" method="POST" action="validar.php">
+                                <label>Rol:</label>
+                                <select name="rol1">
+                                    <option value="0" style="display:none;"><label>Seleccionar</label></option>
+                                    <option value="usuario">Usuario</option>
+                                    <option value="administrador">Administrador</option>
+                                </select>
+
+                                <label>Usuario:</label>
+                                <input type="text" placeholder="Ingresa tu usuario" name="username">
+
+                                <label>Contraseña:</label>
+                                <input type="password" placeholder="Ingresa tu contraseña" name="password">
+
+                                <br><br>
+                                <div class="send">
+                                    <input type="submit" value="Iniciar sesión" name="btningresar">
+                                </div>
+                            </form>
+                            <a href="registro.html" align="center">Registrarse</a>
+                            <a href="inicio.html" align="center">Ir a inicio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skew-abajo"></div>
+        </section>
+
+        <!--Footer-->
+        <br><br>
+        <footer>
+            <div class="partFooter">
+                <div class="social-media">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <br><br>
+                <h5>WazyBambu&copy;2021 - Desarrollado por el Grupo 07</h5>
+            </div>
+        </footer>
+        <!--Scripts-->
+
+        <script src="js/app.js"></script>
+        <script src="https://kit.fontawesome.com/1a98240850.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    </body>
+
+
+</html>
